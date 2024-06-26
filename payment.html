@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Details</title>
+<style>
+    body {
+        background-color: #28a745; /* Farming green background */
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .payment-form {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="button"],
+    input[type="submit"] {
+        width: calc(100% - 30px);
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    input[type="button"],
+    input[type="submit"] {
+        background-color: #007bff; /* Blue button */
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    input[type="button"]:focus,
+    input[type="submit"]:focus {
+        outline: none; /* Remove outline on focus */
+    }
+
+    input[type="button"]:active,
+    input[type="submit"]:active {
+        transform: translateY(2px); /* Add slight downward movement on click */
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+
+<div class="payment-form">
+    <h2>Payment Details</h2>
+    <form action="store_purchase.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="hidden" name="product" value="Product">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="total_price" value="10">
+
+        <input type="submit" value="Confirm Payment">
+    </form>
+</div>
+<script>
+    function confirmPayment() {
+        // You can add payment confirmation logic here
+        alert("Payment confirmed successfully!");
+        // Redirect to the homepage
+        window.location.href = "index.html";
+    }
+    </script>
+</body>
+</html>

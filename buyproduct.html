@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy Vegetables</title>
+<link rel="stylesheet" href="buyproduct.css">
+<style>
+    body{
+        background-color:#FEFDED;
+        
+    }
+    
+    /* Some basic styling */
+    .vegetable-container {
+        display: inline-block;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 12px;
+        margin-left: 150px;
+        border: 2px solid #36360c; 
+        border-radius: 5px;
+        padding: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow effect */
+      
+    }
+    .vegetable-image {
+       padding-left: 90px;
+        width: 100px;
+        margin-right: 20px;
+        /* border: 1px solid #ccc; Border for the image */
+    }
+    .vegetable-details {
+        display: flex;
+        flex-direction: column;
+    }
+    .vegetable-info {
+        /* border: 1px solid #ccc; Border for the details */
+        padding: 10px; /* Padding inside the details */
+    }
+    .button1{
+        text-align: center;
+        padding-top: 20px;
+    }
+    button {
+        padding: 8px 16px;
+        background-color: #f44336; /* Red color for button */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #d32f2f; /* Darker red color on hover */
+    }
+    @media only screen and (max-width: 600px) {
+        .vegetable-container {
+            width: 100%; /* Full width on smaller screens */
+        }
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <img src="farm-earth-high-resolution-logo-transparent.png" alt="Logo" width="auto" height="auto" class="Logo" href="#home">
+         <ul>
+             <!-- <li><a href="farm-earth-high-resolution-logo.png"></a></li> -->
+             <li><a href="index.html">Home</a></li>
+             <li><a href="/buyproduct.html">Product</a></li>
+             <li><a href="/scheme.html">Scheme</a></li>
+             <li><a href="faq.html">FAQ</a></li>
+             <li  class="dropdown"><a href="#blog" class="dropbtn">Major Crops</a>
+                 <div class="dropdown-content">
+                     <a href="/wheat.html">Wheat</a>
+                     <a href="maize.html">Maize</a>
+                     <a href="rice.html">Rice</a>
+                 </div>
+                 <li><a href="market.html">Markets</a></li>
+             </li>
+             <li><div id="google_translate_element" class="icon"></div></li>
+         </ul>
+     </nav>  
+<div class="bgBuy">
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\tomato.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Tomato</h2>
+            <p>Price: $1</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_fz9vfxfz9vfxfz9v.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Onion</h2>
+            <p>Price: $1</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_va2lheva2lheva2l (1).jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Garlic</h2>
+            <p>Price: $1</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_7bso9b7bso9b7bso.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Ginger</h2>
+            <p>Price: $1</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_7cp7ep7cp7ep7cp7.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Apple</h2>
+            <p>Price: $2</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_7cp7eq7cp7eq7cp7.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Mango</h2>
+            <p>Price: $2</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_97jvl897jvl897jv.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Badam</h2>
+            <p>Price: $2</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_fban5tfban5tfban.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2>Jowar</h2>
+            <p>Price: $2</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vegetable-container">
+    <img class="vegetable-image" src="images\Gemini_Generated_Image_fban5tfban5tfban.jpg" alt="Vegetable 1">
+    <div class="vegetable-details">
+        <div class="vegetable-info">
+            <h2 id="name1">Bajra</h2>
+            <p>Price: $<span id="price1" data-price="5">2</span></p>
+            
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            <div class="button1">
+                <button onclick="buyVegetable(1)">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Add more vegetable containers as needed -->
+<footer style="position: relative; bottom: 0; left: 0; width: 97%;">
+    <a href='/'>Home </a>
+          <span>|</span>
+          <a href='privacy.html'> Privacy </a>
+          <span>|</span>
+          <a href='aboutUs.html'> About </a>
+          <span>|</span>
+          <a href='/contactUs.html'> Contact</a>
+          <br/>
+          <p>© 2023 FarmEarth. All Rights Reserved.</p>
+  </footer>
+<script>
+    function buyVegetable(vegetableId) {
+        // Get the quantity selected by the user
+        var quantity = document.getElementById("quantity" + vegetableId).value;
+        
+        // Store the purchase details in sessionStorage
+        sessionStorage.setItem("quantity", quantity);
+        sessionStorage.setItem("vegetableId", vegetableId);
+        
+        // Redirect to the payment page
+        window.location.href = "payment.html";
+    }
+    </script>
+</body>
+</html>
+
+</body>
+</html>

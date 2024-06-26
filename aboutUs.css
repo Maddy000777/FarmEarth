@@ -1,0 +1,162 @@
+nav {
+  display:flex ;
+  background-color:#74E291;
+  border-radius: 10px;
+  height: 8vh;
+  font-size: x-large;
+}
+
+.Logo{
+  position: relative;
+  width:350px;
+  height: 55px;
+  left: 5%;
+  top: 0;
+  padding-right: 150px;
+}
+
+nav ul {
+  /* display:flex ; */
+  justify-content: space-between; 
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: darkgreen;
+  border-radius: 20px;
+  background-color:#F6995C;
+    transition: 0.2s;
+}
+
+.navbar li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #F6995C;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #45a049;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #F6995C;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icon{
+  padding: 12px;
+}
+
+.aboutus{
+    /* display: inline-flex; */
+    margin: 100px 500px 0px;
+    /* float: left; */
+    opacity: 80%;
+    width: 500px;
+    height: 70vh;
+    border-radius: 50%;
+  }
+  
+  body {
+    background-color: #C1F2B0; /* Adjust the color as needed */
+    margin: 0;
+    padding: 0;
+}
+  .aboutUsText{
+    position: absolute;
+    top: 5%;
+    font-size: xxx-large;
+    left: 43%;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #65B741;
+    /* background-color: #50C4ED; */
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    width: 60%;
+  }
+  
+  .aboutUsHeading{
+    position: relative;
+    font-size: xxx-large;
+    /* left: 15%; */
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #65B741;
+    text-align: center;
+    margin: 30px 150px 0px;
+  }
+  
+  .aboutUsPara1{
+    position: relative;
+    top: 105%; 
+    font-size: x-large;
+    left: 1%;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #65B741;
+    text-align: center;
+    margin: 50px 200px 0px;
+  }
+  
+  .aboutUsPara2{
+    position: relative;
+    top: 110%;
+    font-size: x-large;
+    left: 1%;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #65B741;
+    text-align: center;
+    margin: 40px 200px 50px;
+  }
+  
+  footer{
+    text-align: center;
+    font-size: x-large;
+    padding: 12px;
+    background-color: #74E291;
+    color: white;
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #33cc33; /* Green background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="signup.php" method="post" onsubmit="return validateForm()">
+            <input type="text" name="username" id="username" placeholder="Username" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="tel" name="phone" placeholder="Phone Number" required><br>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Sign Up</button>
+            <div id="errorMessages"></div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var errorMessages = document.getElementById("errorMessages");
+            errorMessages.innerHTML = "";
+
+            var hasNumber = /\d/;
+            var startsWithCapital = /^[A-Z]/;
+
+            if (hasNumber.test(username)) {
+                errorMessages.innerHTML += "<p class='error'>Username cannot contain numbers.</p>";
+                return false;
+            }
+
+            if (!startsWithCapital.test(password)) {
+                errorMessages.innerHTML += "<p class='error'>Password must start with a capital letter.</p>";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
